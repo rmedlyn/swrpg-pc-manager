@@ -1,0 +1,79 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="login-button.html">
+
+<dom-module id="pc-manager">
+    <template>
+        <style>
+            :host {
+                display: block
+            }
+            app-toolbar {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+        <app-header-layout>
+            <app-header>
+                <app-toolbar>
+                    <div main-title>SWRPG PC Manager</div>
+                    <login-button></login-button>
+                </app-toolbar>
+            </app-header>
+        </app-header-layout>
+
+    </template>
+
+    <script>
+        /**
+         * `pc-manager` A web app for managing PCs in FFG's Star Wars RPG
+         *
+         * @summary Manages PCs in FFG SWRPG.
+         * @customElement
+         * @polymer
+         * @extends {Polymer.Element}
+         */
+        class PCManager extends Polymer.Element {
+            /**
+             * String providing the tag name to register the element under.
+             */
+            static get is() {
+                return 'pc-manager';
+            }
+
+            /**
+             * Object describing property-related metadata used by Polymer features
+             */
+            static get properties() {
+                return {
+                    
+                };
+            }
+
+            /**
+             * Instance of the element is created/upgraded. Use: initializing state,
+             * set up event listeners, create shadow dom.
+             * @constructor
+             */
+            constructor() {
+                super();
+            }
+
+            /**
+             * Use for one-time configuration of your component after local DOM is initialized. 
+             */
+            ready() {
+                super.ready();
+
+                Polymer.RenderStatus.afterNextRender(this, function() {
+                    
+                });
+            }
+
+        }
+
+        window.customElements.define(PCManager.is, PCManager);
+    </script>
+</dom-module>
