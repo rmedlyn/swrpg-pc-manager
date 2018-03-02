@@ -1,0 +1,23 @@
+{
+  "name": "swrpg-pc-manager",
+  "authors": [
+    "Ryan Medlyn <ryan.medlyn@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.5.0",
+    "polymerfire": "firebase/polymerfire#^2.2.1",
+    "app-layout": "PolymerElements/app-layout#^2.0.5"
+  }
+}
